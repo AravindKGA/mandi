@@ -64,6 +64,7 @@ public class HomeService {
 			 if(count != null)
 			 {
 				 int loopCount =  ((Integer)count)%10 ==0 ? ((Integer)count/10) : (((Integer)count/10)+1);
+				 loopCount = loopCount > 3 ? 3 : loopCount;
 				 int offset = 0,limit = 10;				 
 				 for (int i=0;i< loopCount;i++)
 				 {
